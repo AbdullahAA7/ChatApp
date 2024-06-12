@@ -1,0 +1,106 @@
+.ChatList::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.ChatList::-webkit-scrollbar-thumb {
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 20px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.ChatList {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(44, 44, 44);
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    .search-bar {
+      flex: 1;
+      background-color: rgb(56, 56, 56);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      padding: 10px;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        flex: 1;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .add-icon {
+      width: 36px;
+      height: 36px;
+      background-color: rgb(56, 56, 56);
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: -10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-list {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    height: 100%;
+    margin-top: 0.4rem;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(69, 69, 69) !important;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+
+    img {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-weight: 500;
+      }
+
+      p {
+        font-style: 0.8rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
